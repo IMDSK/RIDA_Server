@@ -26,7 +26,7 @@ Error_Limit = 1
 mode = True
 
 # Define paths with double backslashes
-Drive = "D:\\ubuntu\\RIDA\\Script\\Sentinel_Process"
+Drive = "D:\\RIDA_Server\\Script\\Sentinel_Process"
 Image = os.path.join(Drive, "Image")
 Image_Pre = os.path.join(Drive, "Image_Pre")
 Image_Finish = os.path.join(Drive, "Image_Finish")
@@ -39,7 +39,7 @@ RtbLevel = os.path.join(Drive, "Raster_BurnLevel")
 
 # Adjusted file paths in Track_arr list
 Track_arr = [
-    "T48QUH\\"
+    "T48QUH\\" ,"T48QUT\\"
 ]
 
 def loadCooldown():

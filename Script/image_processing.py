@@ -183,7 +183,7 @@ def server_predict(folder_paths, output_folder_after):
         logger.info("Processing completed for all folders.")
 
         # Define the path to the subprocess script
-        script_path = "D:\\ubuntu\\RIDA\\Script\\Sentinel_Process.py"
+        script_path = "D:\\RIDA_Server\\Script\\Sentinel_Process.py"
 
         # Run the script as a subprocess
         try:
@@ -193,8 +193,8 @@ def server_predict(folder_paths, output_folder_after):
             logger.error("Error during subprocess execution:\n" + e.stderr)
 
         # Move processed folders to the result folder
-        src_folder = "D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Raster_BurnCon"
-        dest_base_folder = "D:\\ubuntu\RIDA\\Dataframe"
+        src_folder = "D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnCon"
+        dest_base_folder = "D:\\RIDA_Server\\Dataframe"
 
         if not os.path.exists(dest_base_folder):
             os.makedirs(dest_base_folder)
@@ -244,24 +244,24 @@ def server_predict(folder_paths, output_folder_after):
         except FileNotFoundError:
             pass
 
-        shutil.rmtree('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process')
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process')
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image_Finish')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image_Finish")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image_Missing')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image_Missing")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image_pre')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Image_pre")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Output')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Output")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Raster_BurnCon')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Raster_BurnCon")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\\\Sentinel_Process\\Raster_BurnShape')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Raster_BurnShape")
-        os.makedirs('D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Raster_BurnLevel')
-        print(f"Created directory: D:\\ubuntu\\RIDA\\Script\\Sentinel_Process\\Raster_BurnLevel")
+        shutil.rmtree('D:\\RIDA_Server\\Script\\Sentinel_Process')
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process')
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Image')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Image")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Image_Finish')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Image_Finish")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Image_Missing')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Image_Missing")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Image_pre')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Image_pre")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Output')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Output")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnCon')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnCon")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnShape')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnShape")
+        os.makedirs('D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnLevel')
+        print(f"Created directory: D:\\RIDA_Server\\Script\\Sentinel_Process\\Raster_BurnLevel")
 
         logger.info("Files moved to result folder successfully.")
 

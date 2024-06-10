@@ -28,8 +28,8 @@ logger = logging.getLogger()
 
 def main():
 
-    folder_path = "D:\\ubuntu\\RIDA\\Satellite_Image"
-    output_folder_after ="D:\\RIDA\\Sentinel_Process\\Image"
+    folder_path = "D:\\RIDA_Server\\Satellite_Image"
+    output_folder_after ="D:\\RIDA_Server\\Script\\Sentinel_Process\\Image"
 
     server_predict(folder_path, output_folder_after)
 
